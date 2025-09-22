@@ -13,9 +13,9 @@ marketing:
   seo:
     site_type: Project
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo documentation theme powered by Hugo Blox website builder.'
-    twitter: 'GetResearchDev'
+    org_name: 'OperationsPAI'
+    description: 'OperationsPAI Research Hub - Advancing AI and Operations Research through innovative algorithms, privacy-preserving technologies, and intelligent systems.'
+    twitter: 'OperationsPAI'
   analytics:
     google_analytics: ''
     google_tag_manager: ''

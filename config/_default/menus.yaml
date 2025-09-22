@@ -5,12 +5,15 @@ main:
   - name: Home
     url: /
     weight: 10
+  - name: Projects
+    url: projects/
+    weight: 15
   - name: Documentation
     url: docs/
-    weight: 15
+    weight: 20
   - name: RCABench
     url: rcabench/
-    weight: 20
+    weight: 25
   - name: Blog
     url: blog/
     weight: 30
