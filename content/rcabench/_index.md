@@ -4,14 +4,18 @@ title: Introduction
 type: docs
 ---
 
-👋 Welcome to the demo of the Hugo Blox Documentation template!
+RCABench is a comprehensive benchmarking platform designed for evaluating root cause analysis (RCA) algorithms in microservices environments. It provides automated fault injection, algorithm execution, and evaluation capabilities for distributed systems research.
 
-<!--more-->
+## 🎯 Key Features
 
-This site is a demo of the Hugo Blox Documentation theme. For the full documentation on how to use this template, refer to the [Hugo Blox Documentation](https://docs.hugoblox.com/).
+- **Inject faults** into microservices using chaos engineering principles
+- **Execute RCA algorithms** on collected observability data
+- **Evaluate and compare** different root cause analysis approaches
+- **Benchmark performance** across various microservice architectures
+- **Manage datasets** of fault scenarios and observability traces
 
 ## Next
 
 {{< cards >}}
-  {{< card url="getting-started" title="Get Started" icon="document-text" subtitle="Create your docs in just 5 minutes!" >}}
+{{< card url="getting-started" title="Get Started" icon="document-text" subtitle="Create your docs in just 5 minutes!" >}}
 {{< /cards >}}
