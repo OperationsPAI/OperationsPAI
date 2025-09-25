@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: "OperationsPAI Research Hub" # Website name
-baseURL: 'https://example.com/' # Website URL
+baseURL: "https://example.com/" # Website URL
 
 ############################
 ## PAGE OPTIONS
@@ -72,9 +72,9 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 enableInlineShortcodes: true
 permalinks:
-  authors: '/author/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
+  authors: "/author/:slug/"
+  tags: "/tag/:slug/"
+  categories: "/category/:slug/"
 disableAliases: true
 outputs:
   home: [HTML, RSS, WebAppManifest, headers, redirects, backlinks]
@@ -91,7 +91,8 @@ taxonomies:
   category: categories
   author: authors
 markup:
-  _merge: deep
+  highlight:
+    style: dracula
 related:
   threshold: 80
   includeNewer: true

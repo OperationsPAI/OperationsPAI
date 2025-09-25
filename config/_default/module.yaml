@@ -7,18 +7,22 @@
 imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+  - path: github.com/KKKZOZ/hugo-admonitions
+  - path: github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2
+  - path: github.com/razonyang/hugo-mod-fuse-js
+  - path: github.com/gohugoio/hugo-mod-heroicons
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
   - source: hugo-blox/blox/community
     target: layouts/_partials/blox/community/
-    includeFiles: '**.html'
+    includeFiles: "**.html"
   - source: hugo-blox/blox/all-access
     target: layouts/_partials/blox/
-    includeFiles: '**.html'
+    includeFiles: "**.html"
   - source: hugo-blox/blox
     target: assets/dist/community/blox/
-    includeFiles: '**.css'
+    includeFiles: "**.css"
   - source: layouts
     target: layouts
   - source: assets

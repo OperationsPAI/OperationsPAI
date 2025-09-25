@@ -1,6 +1,6 @@
 ---
 title: Examples
-weight: 2
+weight: 3
 ---
 
 These examples demonstrate the flexibility and power of RCABench for various research and evaluation scenarios. Adapt them to your specific needs and requirements.

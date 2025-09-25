@@ -4,6 +4,9 @@ dependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.18(tailwindcss@4.1.13)
+  preact:
+    specifier: ^10.27.2
+    version: 10.27.2
 
 devDependencies:
   '@tailwindcss/cli':
@@ -606,6 +609,10 @@ packages:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
+    dev: false
+
+  /preact@10.27.2:
+    resolution: {integrity: sha512-5SYSgFKSyhCbk6SrXyMpqjb5+MQBgfvEKE/OC+PujcY34sOpqtr+0AZQtPYx5IA6VxynQ7rUPCtKzyovpj9Bpg==}
     dev: false
 
   /source-map-js@1.2.1:

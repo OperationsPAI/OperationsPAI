@@ -33,9 +33,9 @@ injector.api_v1_injections_post(
 
 ### 🌐 Scenario 1: Network Delay Injection
 
-**Use case**: Test application resilience against network latency issues between microservices. This scenario helps evaluate how your system handles slow network connections and communication delays.
-
-{{< spoiler text="Click to see the Python code" >}}
+> [!EXPERIMENT]
+>
+> Test application resilience against network latency issues between microservices. This scenario helps evaluate how your system handles slow network connections and communication delays.
 
 ```python
 specs=[
@@ -58,13 +58,11 @@ specs=[
 ],
 ```
 
-{{< /spoiler >}}
-
 ### 💾 Scenario 2: Memory Pressure
 
-**Use case**: Evaluate system behavior under high memory consumption conditions. This scenario helps identify memory leaks, inefficient memory usage, and tests memory management strategies.
-
-{{< spoiler text="Click to see the Python code" >}}
+> [!EXPERIMENT]
+>
+> Evaluate system behavior under high memory consumption conditions. This scenario helps identify memory leaks, inefficient memory usage, and tests memory management strategies.
 
 ```python
 specs=[
@@ -85,13 +83,11 @@ specs=[
 ],
 ```
 
-{{< /spoiler >}}
-
 ### ☠️ Scenario 3: Pod Failure
 
-**Use case**: Test system fault tolerance and recovery mechanisms when pods unexpectedly terminate. This scenario validates auto-scaling, service mesh resilience, and application restart policies.
-
-{{< spoiler text="Click to see the Python code" >}}
+> [!EXPERIMENT]
+>
+> Test system fault tolerance and recovery mechanisms when pods unexpectedly terminate. This scenario validates auto-scaling, service mesh resilience, and application restart policies.
 
 ```python
 specs=[
@@ -109,8 +105,6 @@ specs=[
     )
 ],
 ```
-
-{{< /spoiler >}}
 
 ## 📚 Reference
 

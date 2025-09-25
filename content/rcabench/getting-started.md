@@ -6,7 +6,14 @@ weight: 1
 
 ## 📋 Prerequisites
 
-{{% steps %}}
+### ⚙️ Hardware Requirements
+
+| Component   | Requirement                        |
+| ----------- | ---------------------------------- |
+| **CPU**     | 4+ cores                           |
+| **Memory**  | 8GB+ RAM                           |
+| **Storage** | 20GB+ available SSD storage        |
+| **OS**      | Linux (Ubuntu 20.04+ or CentOS 8+) |
 
 ### 💻 Software Requirements
 
@@ -15,15 +22,6 @@ weight: 1
 - **kubectl** (compatible with your cluster version)
 - **Go** (>= 1.23) for development
 - **Python** (>= 3.10) for SDK usage
-
-### ⚙️ Hardware Requirements
-
-CPU: 4+ cores recommended
-Memory: 8GB+ RAM
-Storage: 20GB+ available disk space
-Network: Stable internet connection for image pulls
-
-{{% /steps %}}
 
 ## 🚀 Quick Start
 
