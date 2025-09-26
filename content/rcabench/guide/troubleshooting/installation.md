@@ -1,9 +1,7 @@
 ---
-title: Installation Issues
+title: Installation Problems
 weight: 1
 ---
-
-This guide helps you resolve common installation and deployment issues with RCABench. Each issue includes clear symptoms and step-by-step solutions.
 
 ## 🗄️ Database Connection Failed
 
