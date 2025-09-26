@@ -17,5 +17,5 @@ RCABench is a comprehensive benchmarking platform designed for evaluating root c
 ## Next
 
 {{< cards >}}
-{{< card url="getting-started" title="Get Started" icon="document-text" subtitle="Create your docs in just 5 minutes!" >}}
+{{< card url="getting-started" title="Get Started" icon="play" subtitle="Create your own system in just 5 minutes!" >}}
 {{< /cards >}}

@@ -6,7 +6,7 @@ weight: 1
 
 ## 📋 Prerequisites
 
-### ⚙️ Hardware Requirements
+### Hardware Requirements
 
 | Component   | Requirement                        |
 | ----------- | ---------------------------------- |
@@ -15,7 +15,7 @@ weight: 1
 | **Storage** | 20GB+ available SSD storage        |
 | **OS**      | Linux (Ubuntu 20.04+ or CentOS 8+) |
 
-### 💻 Software Requirements
+### Software Requirements
 
 - **Docker** (>= 20.10)
 - **Kubernetes** (>= 1.25) or **kind/minikube** for local development
@@ -27,7 +27,7 @@ weight: 1
 
 {{% steps %}}
 
-### 🛠️ Local Development Setup
+### Local Development Setup
 
 {{% steps %}}
 
@@ -68,7 +68,7 @@ open http://localhost:8082/swagger/index.html
 
 {{% /steps %}}
 
-### 🐍 Setup Python Environment
+### Setup Python Environment
 
 ```bash
 # Install RCABench SDK
@@ -79,7 +79,7 @@ cd sdk/python
 pip install -e .
 ```
 
-### 🔌 Connect to RCABench
+### Connect to RCABench
 
 ```python
 from rcabench import RCABenchSDK
@@ -93,7 +93,7 @@ health = sdk.health_check()
 print(f"RCABench status: {health}")
 ```
 
-### 📊 List Available Resources
+### List Available Resources
 
 ```python
 # List available algorithms
@@ -109,7 +109,7 @@ for dataset in datasets:
     print(f"  - {dataset['name']}: {dataset['description']}")
 ```
 
-### ⚡ Inject a CPU Stress Fault
+### Inject a CPU Stress Fault
 
 ```python
 # Define fault injection request
@@ -134,7 +134,7 @@ print(f"Fault injection started: {injection_result}")
 time.sleep(60)
 ```
 
-### 🔍 Run RCA Algorithm
+### Run RCA Algorithm
 
 ```python
 # Define algorithm execution request
@@ -165,11 +165,10 @@ print(f"Root cause analysis results: {results}")
 
 ## Next
 
-Let's customize your new site:
+Let's install the whole RCABench system:
 
 {{< cards >}}
-{{< card url="../guide/project-structure" title="Project Structure" icon="document-duplicate" >}}
-{{< card url="../guide/configuration" title="Configuration" icon="adjustments-vertical" >}}
+{{< card url="../guide/installation" title="Installation" icon="cog-6-tooth" >}}
 {{< /cards >}}
 
 ```

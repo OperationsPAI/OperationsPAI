@@ -5,9 +5,9 @@ weight: 1
 
 ## 📋 System Requirements
 
-### ⚙️ Hardware Dependencies
+### Hardware Dependencies
 
-**🔧 Minimum Requirements**
+**Minimum Requirements**
 
 | Component   | Requirement                        |
 | ----------- | ---------------------------------- |
@@ -16,7 +16,7 @@ weight: 1
 | **Storage** | 10GB available disk space          |
 | **OS**      | Linux, macOS, or Windows with WSL2 |
 
-**⚡ Recommended Requirements**
+**Recommended Requirements**
 
 | Component   | Requirement                        |
 | ----------- | ---------------------------------- |
@@ -25,20 +25,20 @@ weight: 1
 | **Storage** | 20GB+ available SSD storage        |
 | **OS**      | Linux (Ubuntu 20.04+ or CentOS 8+) |
 
-### 💻 Software Dependencies
+### Software Dependencies
 
-**📋 Required**
+**Required**
 
 - **Docker** (>= 20.10)
 - **kubectl** (compatible with your Kubernetes version)
 - **Git** (for cloning the repository)
 
-**☸️ For Kubernetes Deployment**
+**For Kubernetes Deployment**
 
 - **Kubernetes** (>= 1.25) or **kind/minikube** for local development
 - **Helm** (>= 3.0) - optional but recommended
 
-**👨‍💻 For Development**
+**For Development**
 
 - **Go** (>= 1.23)
 - **Python** (>= 3.8)
@@ -52,14 +52,14 @@ weight: 1
 
 {{< spoiler text="Click to see the whole script" >}}
 
-### 📥 Step 1: Clone Repository
+### Step 1: Clone Repository
 
 ```bash
 git clone https://github.com/OperationsPAI/AegisLab.git
 cd AegisLab
 ```
 
-### ▶️ Step 2: Start Services
+### Step 2: Start Services
 
 ```bash
 make local-debug
@@ -72,7 +72,7 @@ make local-debug
 # - RCABench API server
 ```
 
-### ✅ Step 3: Verify Installation
+### Step 3: Verify Installation
 
 ```bash
 # Check if all services are running
@@ -86,11 +86,11 @@ open http://localhost:8082/swagger/index.html
 
 ## ☸️ Kubernetes Deployment
 
-### 🎯 Prerequisites
+### Prerequisites
 
 Ensure you have a Kubernetes cluster ready:
 
-#### 🔧 Local Cluster (kind)
+#### Local Cluster (kind)
 
 ```bash
 # Install kind
@@ -105,7 +105,7 @@ kind create cluster --name rcabench
 kubectl cluster-info --context kind-rcabench
 ```
 
-#### 🚀 Local Cluster (minikube)
+#### Local Cluster (minikube)
 
 ```bash
 # Install minikube
@@ -119,11 +119,11 @@ minikube start --memory=8192 --cpus=4
 minikube addons enable ingress
 ```
 
-### 🚀 Deployment Steps
+### Deployment Steps
 
 {{< spoiler text="Click to see the whole script" >}}
 
-#### 📦 Step 1: Install Dependencies
+#### Step 1: Install Dependencies
 
 ```bash
 make check-prerequisites
@@ -134,7 +134,7 @@ curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffo
 sudo install skaffold /usr/local/bin/
 ```
 
-#### 💾 Step 2: Configure Storage
+#### Step 2: Configure Storage
 
 1. For production deployments, set up persistent storage:
 
@@ -173,7 +173,7 @@ spec:
                 - your-node-name
 ```
 
-#### 🎯 Step 3: Deploy Application
+#### Step 3: Deploy Application
 
 ```bash
 # Deploy with default configuration
@@ -187,7 +187,11 @@ make status
 
 ## ✅ Verification
 
-### 🏥 Health Checks
+### Health Checks
+
+> [!NOTE]
+>
+> Assume the base URL: `http://localhost:8082`
 
 ```bash
 # Check API health
@@ -213,7 +217,7 @@ curl http://localhost:8082/health
 # }
 ```
 
-### 🔍 Service Verification
+### Service Verification
 
 ```bash
 # Check all pods are running
@@ -226,7 +230,7 @@ kubectl get services -n exp
 kubectl logs -f deployment/rcabench -n exp
 ```
 
-### 🧪 Functional Testing
+### Functional Testing
 
 ```bash
 # Test API endpoints
@@ -239,7 +243,7 @@ curl http://localhost:8082/api/v1/datasets
 curl -X POST http://localhost:8082/api/v1/injection/test
 ```
 
-### 🐍 Python SDK Verification
+### Python SDK Verification
 
 ```bash
 # Install Python SDK
@@ -264,6 +268,6 @@ If you encounter problems during installation or deployment:
 {{< card url="../troubleshooting/installation" title="Troubleshooting Guide" icon="exclamation-triangle" subtitle="Common installation issues and solutions" >}}
 {{< /cards >}}
 
-> [!TIP]
+> [!IMPORTANT]
 >
 > **Most installation issues** are related to missing dependencies, insufficient permissions, or resource constraints. Check the troubleshooting guide first!

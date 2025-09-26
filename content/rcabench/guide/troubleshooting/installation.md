@@ -11,13 +11,13 @@ This guide helps you resolve common installation and deployment issues with RCAB
 >
 > RCABench cannot connect to the database, causing API failures and health check errors.
 
-### 🔍 Symptoms
+### Symptoms
 
 - API returns database connection errors
 - Health check endpoint fails
 - MySQL connection timeouts
 
-### 🛠️ Solutions
+### Solutions
 
 {{< spoiler text="Click to see the whole script" >}}
 
@@ -55,13 +55,13 @@ kubectl exec -it deployment/mysql -n exp -- mysql -u root -p rcabench
 >
 > Kubernetes pods cannot be scheduled due to resource constraints or node issues.
 
-### 🔍 Symptoms
+### Symptoms
 
 - Pods stuck in `Pending` state
 - Resource allocation errors
 - Node affinity conflicts
 
-### 🛠️ Solutions
+### Solutions
 
 {{< spoiler text="Click to see the whole solutions" >}}
 
@@ -101,13 +101,13 @@ kubectl scale deployment <deployment-name> --replicas=0 -n <namespace>
 >
 > Kubernetes cannot pull container images from the registry.
 
-### 🔍 Symptoms
+### Symptoms
 
 - `ImagePullBackOff` errors
 - `ErrImagePull` status
 - Authentication failures
 
-### 🛠️ Solutions
+### Solutions
 
 {{< spoiler text="Click to see the whole script" >}}
 
@@ -151,13 +151,13 @@ kubectl create secret docker-registry rcabench-registry-secret \
 >
 > RBAC permission issues prevent RCABench from accessing Kubernetes resources.
 
-### 🔍 Symptoms
+### Symptoms
 
 - `RBAC permission denied` errors
 - `Unauthorized access` errors
 - API server rejecting requests
 
-### 🛠️ Solutions
+### Solutions
 
 {{< spoiler text="Click to see the whole script" >}}
 
@@ -198,13 +198,13 @@ kubectl describe rolebinding rcabench-binding -n exp
 >
 > Network communication between services fails due to connectivity or DNS issues.
 
-### 🔍 Symptoms
+### Symptoms
 
 - Service unreachable errors
 - Connection timeouts
 - DNS resolution failures
 
-### 🛠️ Solutions
+### Solutions
 
 {{< spoiler text="Click to see the whole script" >}}
 
@@ -250,17 +250,18 @@ kubectl describe ingress rcabench-ingress -n exp
 
 If you encounter issues not covered here:
 
-1. **📋 Check logs**: `make logs` or `kubectl logs -f deployment/rcabench -n exp`
-2. **⚙️ Verify configuration**: Review your `hugo.toml` file
-3. **📊 Resource monitoring**: Check CPU/memory usage with `kubectl top pods -n exp`
+1. **Check logs**: `make logs` or `kubectl logs -f deployment/rcabench -n exp`
+2. **Verify configuration**: Review your `hugo.toml` file
+3. **Resource monitoring**: Check CPU/memory usage with `kubectl top pods -n exp`
 
 ## 🆘 Still Having Issues?
 
 If you're still experiencing problems after trying these solutions:
 
 {{< cards >}}
-{{< card url="https://github.com/OperationsPAI/AegisLab/issues" title="Report a Bug" icon="exclamation-triangle" subtitle="Create an issue on GitHub" >}}
+{{< card url="https://github.com/OperationsPAI/AegisLab/issues" title="Report a Bug" icon="bug-ant" subtitle="Create an issue on GitHub" >}}
 {{< /cards >}}
 
-> [!TIP]
+> [!IMPORTANT]
+>
 > When reporting issues, include your system information, error logs, and steps to reproduce the problem.

@@ -32,7 +32,7 @@ host = "redis-service:6379"  # Kubernetes service name
 namespace = "exp"  # Target namespace for experiments
 ```
 
-### 💉 Injection Configuration
+### 🔧 Injection Configuration
 
 ```toml
 [injection]

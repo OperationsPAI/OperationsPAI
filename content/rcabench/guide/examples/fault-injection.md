@@ -29,9 +29,9 @@ injector.api_v1_injections_post(
 )
 ```
 
-## Fault Injection Scenarios
+## 🔧 Fault Injection Scenarios
 
-### 🌐 Scenario 1: Network Delay Injection
+### Scenario 1: Network Delay Injection
 
 > [!EXPERIMENT]
 >
@@ -58,7 +58,7 @@ specs=[
 ],
 ```
 
-### 💾 Scenario 2: Memory Pressure
+### Scenario 2: Memory Pressure
 
 > [!EXPERIMENT]
 >
@@ -83,7 +83,7 @@ specs=[
 ],
 ```
 
-### ☠️ Scenario 3: Pod Failure
+### Scenario 3: Pod Failure
 
 > [!EXPERIMENT]
 >
