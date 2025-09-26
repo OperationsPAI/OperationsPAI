@@ -1,5 +1,5 @@
 ---
-title: 'OperationsPAI Research Hub'
+title: "OperationsPAI Research Hub"
 date: 2024-01-01
 type: landing
 
@@ -76,27 +76,27 @@ sections:
           icon: shield-check
           description: Privacy-preserving federated learning framework with differential privacy and secure aggregation.
           url: /projects/federated-learning/
-  
+
   - block: markdown
     content:
       title: "🔬 Research Showcase"
       text: |
         ### Recent Publications
-        
+
         Our research has been published in top-tier conferences and journals:
-        
+
         - **Neural Optimizer** - ICML 2024: "Deep Learning Approaches for Combinatorial Optimization"
         - **Adaptive Scheduling** - AAAI 2024: "Deep Reinforcement Learning for Dynamic Resource Management" 
         - **SecureFL** - NeurIPS 2024: "A Privacy-Preserving Federated Learning Framework"
-        
+
         ### Impact & Applications
-        
+
         Our work spans multiple domains with real-world impact:
         - **Logistics & Transportation**: Route optimization and fleet management
         - **Cloud Computing**: Intelligent resource allocation and scheduling
         - **Healthcare**: Privacy-preserving collaborative AI for medical research
         - **Finance**: Secure multi-party computation for fraud detection
-        
+
         {{< cards >}}
           {{< card url="/projects/neural-optimizer/" title="Neural Optimizer" icon="cpu-chip" subtitle="15% improvement in optimization performance" >}}
           {{< card url="/projects/adaptive-scheduling/" title="Adaptive Scheduling" icon="clock" subtitle="25% reduction in resource waste" >}}
