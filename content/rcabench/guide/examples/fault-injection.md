@@ -29,6 +29,8 @@ injector.api_v1_injections_post(
 )
 ```
 
+---
+
 ## 🔧 Fault Injection Scenarios
 
 ### Scenario 1: Network Delay Injection

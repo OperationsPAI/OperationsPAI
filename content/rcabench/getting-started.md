@@ -23,15 +23,13 @@ weight: 1
 - **Go** (>= 1.23) for development
 - **Python** (>= 3.10) for SDK usage
 
+---
+
 ## 🚀 Quick Start
 
-{{% steps %}}
+### Step 1: Local Development Setup
 
-### Local Development Setup
-
-{{% steps %}}
-
-#### 📥 Clone Repository
+#### Clone Repository
 
 ```bash
 # Clone the repository
@@ -39,7 +37,7 @@ git clone <repository-url>
 cd rcabench
 ```
 
-#### ▶️ Start Services
+#### Start Services
 
 ```bash
 # Start all services with Docker Compose
@@ -53,7 +51,7 @@ make local-debug
 # - RCABench API server
 ```
 
-#### ✅ Verify Installation
+#### Verify Installation
 
 ```bash
 # Check if all services are running
@@ -66,9 +64,7 @@ curl http://localhost:8082/health
 open http://localhost:8082/swagger/index.html
 ```
 
-{{% /steps %}}
-
-### Setup Python Environment
+### Step 2: Setup Python Environment
 
 ```bash
 # Install RCABench SDK
@@ -79,7 +75,7 @@ cd sdk/python
 pip install -e .
 ```
 
-### Connect to RCABench
+### Step 3: Connect to RCABench
 
 ```python
 from rcabench import RCABenchSDK
@@ -93,7 +89,7 @@ health = sdk.health_check()
 print(f"RCABench status: {health}")
 ```
 
-### List Available Resources
+### Step 4: List Available Resources
 
 ```python
 # List available algorithms
@@ -109,7 +105,7 @@ for dataset in datasets:
     print(f"  - {dataset['name']}: {dataset['description']}")
 ```
 
-### Inject a CPU Stress Fault
+### Step 5: Inject a CPU Stress Fault
 
 ```python
 # Define fault injection request
@@ -134,7 +130,7 @@ print(f"Fault injection started: {injection_result}")
 time.sleep(60)
 ```
 
-### Run RCA Algorithm
+### Step 6: Run RCA Algorithm
 
 ```python
 # Define algorithm execution request
@@ -161,9 +157,9 @@ results = sdk.algorithm.get_results(algorithm_result['task_id'])
 print(f"Root cause analysis results: {results}")
 ```
 
-{{% /steps %}}
+---
 
-## Next
+## 📍 Next
 
 Let's install the whole RCABench system:
 

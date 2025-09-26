@@ -254,6 +254,8 @@ If you encounter issues not covered here:
 2. **Verify configuration**: Review your `hugo.toml` file
 3. **Resource monitoring**: Check CPU/memory usage with `kubectl top pods -n exp`
 
+---
+
 ## 🆘 Still Having Issues?
 
 If you're still experiencing problems after trying these solutions:

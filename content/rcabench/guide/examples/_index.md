@@ -7,5 +7,5 @@ These examples demonstrate the flexibility and power of RCABench for various res
 
 {{< cards >}}
 {{< card url="algorithm-development" title="Algorithm Development" icon="code-bracket" >}}
-{{< card url="fault-injection" title="Fault Injection" icon="exclamation-triangle" >}}
+{{< card url="fault-injection" title="Fault Injection" icon="wrench" >}}
 {{< /cards >}}

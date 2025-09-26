@@ -6,19 +6,19 @@ weight: 1
 
 ## Quick Start from Template
 
-### Steps 1: Initialize a new site
+### Step 1: Initialize a new site
 
 [Click to copy the template on GitHub](https://github.com/new?template_name=theme-documentation&template_owner=HugoBlox)
 
-### Steps 2: Configure your new site
+### Step 2: Configure your new site
 
 [Configure your site name, description, and menu.](https://docs.hugoblox.com/tutorial/blog/)
 
-### Steps 3: Add your content
+### Step 3: Add your content
 
 [Edit the homepage and add your documentation pages.](https://docs.hugoblox.com/tutorial/blog/)
 
-### Steps 4: Publish your site
+### Step 4: Publish your site
 
 [Easily publish your site for free with GitHub Pages](https://docs.hugoblox.com/tutorial/blog/)
 

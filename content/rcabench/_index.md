@@ -14,6 +14,8 @@ RCABench is a comprehensive benchmarking platform designed for evaluating root c
 - **Benchmark performance** across various microservice architectures
 - **Manage datasets** of fault scenarios and observability traces
 
+---
+
 ## Next
 
 {{< cards >}}

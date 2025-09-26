@@ -44,6 +44,8 @@ weight: 1
 - **Python** (>= 3.8)
 - **Make** (for using Makefile commands)
 
+---
+
 ## 🛠️ Local Development Setup
 
 > [!NOTE]
@@ -184,6 +186,8 @@ make status
 ```
 
 {{< /spoiler >}}
+
+---
 
 ## ✅ Verification
 
